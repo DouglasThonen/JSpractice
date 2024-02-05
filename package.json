@@ -1,0 +1,21 @@
+{
+  "name": "javascript_practice",
+  "version": "1.0.0",
+  "description": "practice",
+  "main": "Javascriptpractice.js",
+  "scripts": {
+    "test": "doug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "JavaScript_practice"
+  },
+  "keywords": [
+    "JavaScript"
+  ],
+  "author": "Douglas Thonen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

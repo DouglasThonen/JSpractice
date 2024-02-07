@@ -68,14 +68,73 @@
 // console.log(closestTo100(49, 51));
 // console.log(closestTo100(50, 50));
 
-const countChars = (str, char) =>
-str.split('').filter(ch => ch === char).length;
+// const countChars = (str, char) =>
+// str.split('').filter(ch => ch === char).length;
 
-const contains2To4 = (str,char) =>
-countChars(str, char) >= 2 && countChars(str, char) <= 4;
+// const contains2To4 = (str,char) =>
+// countChars(str, char) >= 2 && countChars(str, char) <= 4;
 
-console.log(contains2To4('ooh!', 'o'));
-console.log(contains2To4('oh!', 'o'));
-console.log(contains2To4('oooh!', 'o'));
-console.log(contains2To4('ooooh!', 'o'));
-console.log(contains2To4('oooooh!', 'o'));
+// console.log(contains2To4('ooh!', 'o'));
+// console.log(contains2To4('oh!', 'o'));
+// console.log(contains2To4('oooh!', 'o'));
+// console.log(contains2To4('ooooh!', 'o'));
+// console.log(contains2To4('oooooh!', 'o'));
+
+// const countEventNumbers = (arr) => 
+// arr.filter(num => num % 2 === 0).length;
+
+// const createArrayOfNumbers = (num) => {
+//     const returnArray = [];
+//     for (let i = 1; i <= num; i += 1) {
+//         returnArray.push(i);
+//     }
+//     return returnArray;
+// };
+
+// console.log(countEventNumbers(createArrayOfNumbers(6)));
+// console.log(countEventNumbers(createArrayOfNumbers(9)));
+
+// console.log(countEventNumbers([1,2,3,4,5,6]));
+// console.log(countEventNumbers([2,2,2,2,5,6]));
+// console.log(countEventNumbers([3,5,7,9,10,100]));
+
+// const isAscending = (arr) => {
+//     for (let i = 0; i < arr.length; i += 1) {
+//         if (arr[i+1] < arr[i]) return false;
+//     }
+//     return true;
+// }
+
+// console.log(isAscending([1,2,3,4,5,6]));
+// console.log(isAscending([1,2,5,4,3,6]));
+// console.log(isAscending([1,2,3,4,6,6]));
+
+// const largestEven = (arr) => 
+// Math.max(...arr.filter(num => num % 2 === 0));
+
+// console.log(largestEven([1,2,3,4,5,6]));
+// console.log(largestEven([1,2,33,4,5,6]));
+// console.log(largestEven([1,2,3,,44,55,6]));
+
+const replaceFirstDigit = (str) => 
+str.replace(/[0-9]/, '$');
+
+console.log(replaceFirstDigit('Abcd1Abcde'));
+console.log(replaceFirstDigit('A123Abcde'));
+console.log(replaceFirstDigit('A1cd1Abcd1'));
+
+const replaceFirstDigit2 = (str) => 
+str.replace(/[\d]/, '$');
+
+console.log(replaceFirstDigit2('Abcd1Abcde'));
+console.log(replaceFirstDigit2('A123Abcde'));
+console.log(replaceFirstDigit2('A1cd1Abcd1'));
+
+const replaceAllDigit = (str) => 
+str.replace(/[0-9]/g, '$');
+
+console.log(replaceAllDigit('Abcd1Abcde'));
+console.log(replaceAllDigit('A123Abcde'));
+console.log(replaceAllDigit('A1cd1Abcd1'));
+
+~
